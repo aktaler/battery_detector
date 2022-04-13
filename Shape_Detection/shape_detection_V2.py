@@ -6,11 +6,11 @@ import numpy as np
 from datetime import datetime
 
 # switch variable for image or video stream
-use_image = True
+use_image = False
 
-# start video capture
+# start video
 if not use_image:
-    cap = cv2.VideoCapture(2)
+    cap = cv2.VideoCapture(1)
 
 while True:
     # start timer to estimate code execution time
@@ -35,7 +35,7 @@ while True:
     # threshold it and invert
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (5, 5), 2)
-    thresh = cv2.threshold(blurred, 120, 255, cv2.THRESH_BINARY)[1]
+    thresh = cv2.threshold(blurred, 110, 255, cv2.THRESH_BINARY)[1]
     inverted = cv2.bitwise_not(thresh)
 
     # show interim images

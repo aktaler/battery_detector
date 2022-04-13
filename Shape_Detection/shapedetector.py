@@ -12,17 +12,18 @@ class ShapeDetector:
         area = cv2.contourArea(c)
 
         #compare Area to couple of values
-        if 2000 < area < 3000:
+        if 3500 < area < 5000:
             shape = "AAAA"
 
-        elif 3000 < area < 4500:
+        elif 6000 < area < 7500:
             shape = "AAA"
 
-        elif 6000 < area < 7500:
+        elif 8000 < area < 9000:
             shape = "AA"
 
-        elif 12000 < area < 15000:
+        elif 15000 < area < 20000:
             shape = "9V"
 
-       # return the name of the shape
+        # print(shape, str(area))
+        # return the name of the shape
         return shape
