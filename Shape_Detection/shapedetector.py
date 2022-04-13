@@ -15,7 +15,7 @@ class ShapeDetector:
         if 3500 < area < 5000:
             shape = "AAAA"
 
-        elif 6000 < area < 7500:
+        elif 5000 < area < 7500:
             shape = "AAA"
 
         elif 8000 < area < 9000:

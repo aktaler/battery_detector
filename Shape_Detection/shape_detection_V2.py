@@ -62,7 +62,7 @@ while True:
     for c in cnts:
 
         # Skip over small and to large contours
-        if 2000 > cv2.contourArea(c) > 25000:
+        if 3000 > cv2.contourArea(c) < 25000:
             continue
         ''' not needed for now
         # compute the center of the contour
