@@ -1,5 +1,9 @@
 # Key "q" will break camera loop
+'''
+TODO
+Check for intersection between gripper perimeter and other rectangular boxes, maybe use contour hierarchy to just check the first one
 
+'''
 # import the necessary packages
 from shapedetector import ShapeDetector
 import imutils
@@ -50,7 +54,7 @@ while True:
     # cv2.imshow("Canny", canny)
     # cv2.imshow("thresh", thresh)
     # cv2.imshow("blurred", blurred)
-    cv2.imshow("inverted", inverted)
+    # cv2.imshow("inverted", inverted)
 
     # find contours in the thresholded image and initialize the
     # shape detector
